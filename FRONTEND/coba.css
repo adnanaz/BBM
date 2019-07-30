@@ -313,10 +313,15 @@
 
 }
 
+
 /*POSISI TAGS*/
 .cstm{
   margin-left: 390px;
 }
+
+/*.pad15 {
+  padding: 0;
+}*/
 
 /*CAROUSEL PROPS*/
 .MultiCarousel { float: left; overflow: hidden; padding:10px; width: 100%; position:relative; }
@@ -337,3 +342,64 @@
     border-radius:50%;
 }
 
+.load {
+  margin: auto;
+  text-align: center;
+  border: solid 1px;
+  width: 150px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.mitra {
+  width: 220px;
+  height: 110px;
+  margin: 0 0 5px 0;
+
+}
+.daftar button {
+  padding: 10px;
+}
+
+.more {
+  margin-top: 10px;
+  margin-left: 2px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+    border-bottom: 1px dashed #ddd;
+}
+.sosmed {
+display: inline-block;
+}
+
+/* collapse text */
+#summary {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#summary p.collapse:not(.show) {
+    height: 20px !important;
+    overflow: hidden;
+  
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+}
+
+#summary p.collapsing {
+    min-height: 20px !important;
+}
+
+#summary a.collapsed:after  {
+    content: 'Baca selengkapnya';
+}
+
+#summary a:not(.collapsed):after {
+    content: 'Lebih sedikit';
+}
