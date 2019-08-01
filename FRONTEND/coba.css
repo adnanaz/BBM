@@ -1,6 +1,5 @@
 /*BATASSS!*/
 
-
 /* Clearfix
 ------------------------------------------- */
 .navbar:before,
@@ -319,9 +318,10 @@
   margin-left: 390px;
 }
 
-/*.pad15 {
-  padding: 0;
-}*/
+.pad15 {
+  background-color: #ffff;
+  border: solid 2px;
+  }
 
 /*CAROUSEL PROPS*/
 .MultiCarousel { float: left; overflow: hidden; padding:10px; width: 100%; position:relative; }
@@ -345,11 +345,6 @@
 .load {
   margin: auto;
   text-align: center;
-  border: solid 1px;
-  width: 150px;
-  height: 30px;
-  padding: 5px;
-  border-radius: 4px;
 }
 
 .mitra {
@@ -373,9 +368,10 @@
     margin: 10px 0;
     border-bottom: 1px dashed #ddd;
 }
-.sosmed {
-display: inline-block;
-}
+/*.sosmed img {
+height: 40px;
+width: 40px;
+}*/
 
 /* collapse text */
 #summary {
@@ -384,7 +380,7 @@ display: inline-block;
 }
 
 #summary p.collapse:not(.show) {
-    height: 20px !important;
+    height: 25px !important;
     overflow: hidden;
   
     display: -webkit-box;

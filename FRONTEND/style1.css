@@ -67,12 +67,32 @@ border-radius: 1px;
 
 @import url(https://fonts.googleapis.com/css?family=Neuton:300,400,700,400italic);
 
-body {
-  padding: 0px;
-  
-  font-family: Neuton, serif;
+body {  
+font-family: 'Poppins', sans-serif;                                                                                                      
 }
 
+p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    font-weight: 300;
+    color: #777;
+    margin: 30px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #333;
+}
+
+/*a {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}*/
+
+h6  {
+  font-size: 15px;
+}
 
 figure.book {
   margin: 0 5px 5px 0;
@@ -150,13 +170,13 @@ figure.book {
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
 
 .mod-countdown {
-  font-family: 'Arvo', serif;
-  font-weight: bold;
+  font-size: 14px;
   border:solid 1px;
   text-align:center;
-  width:270px;
+  width:240px;
   padding:5px;
   border-radius:10px;
+  background-color: #FFC800;
  }
   
   .judul {
@@ -171,7 +191,7 @@ figure.book {
   .days {
     
     .count {
-      font-size: 20px; 
+      font-size: 14px; 
       line-height: 0.60em;
     }
     
