@@ -1,0 +1,154 @@
+/*--------------------
+---- Top-Bar Nav  ----
+---------------------*/
+.top-bar-wrap {
+  height: 35px;
+
+}
+
+.top-bar {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.top-bar-list a {
+  padding-left: 12px;
+}
+
+.mountains {
+  height:125px;
+  width:100%;
+  background: url('https://hvtm.com.au/wp-content/uploads/2019/02/mountains_2560.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+
+.nav-icons {
+  margin-right: 0px;
+}
+
+.navbar-brand {
+  position: absolute;
+  top: 10px;
+  z-index: 1000;
+}
+
+/*-------------------
+---- Primary-Nav ----
+--------------------*/
+.primary-nav-list li {
+  padding-left: 16px;
+}
+
+.fa-search {
+  color: #fff;
+}
+
+.md-form {
+  padding-left: 25px;
+}
+
+/* -----------------------
+----- Vertical Nav -------
+------------------------*/
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a,
+.nav-tabs a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover,
+.nav-tabs a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active,
+.nav-tabs a.active {
+  background-color: #f08239; /* Add a orange color to the "active/current" link */
+  color: white;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.carousel-home {
+  padding-top: 70px;
+  z-index: -1;
+}
+
+#myTab {
+  margin-top: 60px;
+}
+
+/* ======================================================== */
+/* -----------  Media Query for Mobile to Tablet ---------- */
+/* ======================================================== */
+@media (min-width: 300px) and (max-width: 1024px) {
+  .top-bar-list {
+    margin-top: 35px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-brand {
+    position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .top-bar {
+    margin-top: -50px;
+  }
+
+  .primary-nav {
+    margin-top: 130px;
+  }
+
+  .vertical-nav {
+    display: none;
+  }
+
+ #navbar-toggler-primary{
+    display: none;
+  }
+ 
+  .form-inline{
+    display:inline-block;
+    margin: 0 auto;
+    text-align:center;
+    width:100%;
+  }
+  .top-bar-list .top-bar-icons a {
+    display:flex;
+    list-style: none;
+    height:100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+}
+
+/* Desktop Media Query */
+@media (min-width: 991px) {
+  .mobile-view-nav {
+    display: none;
+  }
+}
