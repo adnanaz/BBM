@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -200,4 +201,208 @@
 
 </body>
 <script type="text/javascript" src="cart.js"></script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="cart.css">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  
+<!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
+"> -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+</head>
+<body>  
+
+  <div class="container-fluid">
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#2B7A78;">
+  <a class="navbar-brand" href="#">
+    <img src="assets/logoj.png" alt="logo" style="width:58px;">
+  </a>
+<div class="navbar-category">
+        <a href="javascript:;" class="category-button">
+          
+          <div class="category-btn">
+            Category
+          </div>
+        </a>
+        <ul class="category-menu">
+          <li class="category-dropdown">
+            <a href="#"><img src="https://img.icons8.com/color/20/000000/sesame.png">Benih</a>
+             <ul class="category-submenu">
+              <!-- <li class="submenu-header"></li> -->
+              <li class="submenu-header">Benih</li>
+              <li><a href="#">Benih Celosia</a></li>
+              <li><a href="#">Benih Matahari</a></li>
+              <li><a href="#">Benih Aster</a></li>
+              <li><a href="#">Benih Vinca</a></li>
+              <li><a href="#">Kenop Putih</a></li>
+              <li class="submenu-divider"></li>
+              <li><a href="#">Tampilkan lebih lanjut</a></li>
+            </ul>
+          </li>
+
+          <li class="category-dropdown">
+            <a href="#"><img src="https://img.icons8.com/color/20/000000/paper-bag-with-seeds.png">Bibit</a>
+            <ul class="category-submenu">
+              <!-- <li class="submenu-header"></li> -->
+              <li class="submenu-header">Bibit</li>
+              <li><a href="#">Bibit Celosia</a></li>
+              <li><a href="#">Benih Matahari</a></li>
+              <li><a href="#">Benih Aster</a></li>
+              <li><a href="#">Benih Vinca</a></li>
+              <li><a href="#">Kenop Putih</a></li>
+              <li class="submenu-divider"></li>
+              <li><a href="#">Tampilkan lebih lanjut</a></li>
+            </ul>
+          </li>
+          <li class="category-dropdown">
+            <a href="#"><img src="https://img.icons8.com/dusk/20/000000/flower.png">Tanaman</a>
+            <ul class="category-submenu">
+              <!-- <li class="submenu-header"></li> -->
+              <li class="submenu-header">Tanaman</li>
+              <li><a href="#">Bunga Matahari</a></li>
+              <li><a href="#">Bunga Kamboja</a></li>
+              <li><a href="#">Bunga Aster</a></li>
+              <li class="submenu-divider"></li>
+              <li><a href="#">Tampilkan lebih lanjut</a></li>
+            </ul>
+          </li>
+
+           <li class="category-dropdown">
+            <a href="#"><img src="https://img.icons8.com/cotton/20/000000/tree.png">Pohon</a>
+            <ul class="category-submenu">
+              <!-- <li class="submenu-header"></li> -->
+              <li class="submenu-header">Pohon</li>
+              <li><a href="#">Pohon Stroberi</a></li>
+              <li><a href="#">Bunga Mangga</a></li>
+              <li><a href="#">Bunga jeruk</a></li>
+              <li class="submenu-divider"></li>
+              <li><a href="#">Tampilkan lebih lanjut</a></li>
+            </ul>
+          </li>
+
+
+          <li class="category-dropdown">
+          <a href="#"><img src="https://img.icons8.com/color/20/000000/orchid.png">bunga</a>
+            <ul class="category-submenu">
+              <!-- <li class="submenu-header"></li> -->
+              <li class="submenu-header">Bunga</li>
+              <li><a href="#">Bunga Anggrek</a></li>
+              <li><a href="#">Bunga Mangga</a></li>
+              <li><a href="#">Bunga jeruk</a></li>
+              <li class="submenu-divider"></li>
+              <li><a href="#">Tampilkan lebih lanjut</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+   <form class="form-inline my-2 my-lg-0" style="margin-left: 150px;">
+      <input class="form-control mr-sm-2" type="search" placeholder="Cari Bibit,pohon,tanaman" aria-label="Search" style="width: 300px;">
+         <a href="#" class="btn btn-outline">Search</a>
+      <a href="#" class="btn btn-outline ml-2">Masuk</a>
+     <div class="dropdown">
+    <button type="button" class="btn btn-outline dropdown-toggle ml-2" data-toggle="dropdown">
+      Keranjang
+    </button>
+    <div class="dropdown-menu">
+     <div class="card">
+    <div class="card-body"> <div class="form-group">
+    
+    <input type="text" class="form-control mb-2" name="totalPrice" id="totalPrice" placeholder="Price">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="totalQuantity" id="totalQuantity" placeholder="Quantity">
+  </div></div> 
+  </div>
+    </div>
+  </div><img class="ml-2" src="https://img.icons8.com/dusk/45/000000/shopping-cart.png"> 
+    </form>
+</nav>
+
+
+<div class="container items">
+  <div class="row">
+    
+  <div class="col-4">
+      <div class="card mb-3">
+        <img class="card-img-top img-fluid" src="http://placehold.it/303?text=Item1" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Item 1</h4>
+          <p class="card-text">$<span class="item-price">50</span></p>
+          <button class="btn btn-primary add">Add to cart <span class="item-quantity">0</span></button>
+        </div>
+      </div>
+    </div>
+    
+  <div class="col-4">
+      <div class="card mb-3">
+        <img class="card-img-top img-fluid" src="http://placehold.it/303?text=Item2" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Item 2</h4>
+          <p class="card-text">$<span class="item-price">10</span></p>
+          <button class="btn btn-primary add">Add to cart <span class="item-quantity">0</span></button>
+        </div>
+      </div>
+    </div>
+  
+      <div class="col-4">
+      <div class="card mb-3">
+        <img class="card-img-top img-fluid" src="http://placehold.it/303?text=Item3" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Item 3</h4>
+          <p class="card-text">$<span class="item-price">25</span></p>
+          <button class="btn btn-primary add">Add to cart <span class="item-quantity">0</span></button>
+        </div>
+      </div>
+    </div>
+  
+      <div class="col-4">
+      <div class="card mb-3">
+        <img class="card-img-top img-fluid" src="http://placehold.it/303?text=Item4" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Item 4</h4>
+          <p class="card-text">$<span class="item-price">70</span></p>
+          <button class="btn btn-primary add">Add to cart <span class="item-quantity">0</span></button>
+        </div>
+      </div>
+    </div>
+  
+      <div class="col-4">
+      <div class="card mb-3">
+        <img class="card-img-top img-fluid" src="http://placehold.it/303?text=Item5" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Item 5</h4>
+          <p class="card-text">$<span class="item-price">5.5</span></p>
+          <button class="btn btn-primary add">Add to cart <span class="item-quantity">0</span></button>
+        </div>
+      </div>
+    </div>
+  
+      <div class="col-4">
+      <div class="card mb-3">
+        <img class="card-img-top img-fluid" src="http://placehold.it/303?text=Item6" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Item 6</h4>
+          <p class="card-text">$<span class="item-price">5.7</span></p>
+          <button class="btn btn-primary add">Add to cart <span class="item-quantity">0</span></button>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+</body>
+<script type="text/javascript" src="cart.js"></script>
+>>>>>>> f2477845a845cf8e3add3e925f05a57e2471a97c
 </html>

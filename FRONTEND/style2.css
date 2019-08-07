@@ -1,4 +1,119 @@
-/*BATASSS!*/
+html.magnifying > body {
+  overflow-x: hidden !important;
+}
+.magnify,
+.magnify > .magnify-lens,
+.magnify-mobile,
+.lens-mobile { /* Reset */
+  min-width: 0;
+  min-height: 0;
+  animation: none;
+  border: none;
+  float: none;
+  margin: 0;
+  opacity: 1;
+  outline: none;
+  overflow: visible;
+  padding: 0;
+  text-indent: 0;
+  transform: none;
+  transition: none;
+}
+.magnify {
+  position: relative;
+  width: auto;
+  height: auto;
+  box-shadow: none;
+  display: inline-block;
+  z-index: inherit;
+}
+.magnify > .magnify-lens { /* Magnifying lens */
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  /* Multiple box shadows to achieve the glass lens effect */
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+    0 0 7px 7px rgba(0, 0, 0, 0.25),
+    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  cursor: none;
+  display: none;
+  z-index: 99;
+}
+.magnify > .magnify-lens.loading {
+  background: #333 !important;
+  opacity: 0.8;
+}
+.magnify > .magnify-lens.loading:after { /* Loading text */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  content: 'Loading...';
+  font: italic normal 16px/1 Calibri, sans-serif;
+  letter-spacing: 1px;
+  margin-top: -8px;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(51, 51, 51, 0.8);
+  text-transform: none;
+}
+
+
+  #sample-glasses {
+  width: 100%;
+  max-width: 400px;
+  padding-bottom: 6em;
+}
+#sample-watch {
+  width: 100%;
+  max-width: 210px;
+}
+.magnify > .magnify-lens {
+  background-color: #fff !important; /* Prevent adjacent image from appearing in lens */
+}
+/*category props */
+BATASSS!*/
+
+/* Clearfix
+------------------------------------------- */
+.navbar:before,
+.navbar:after,
+.navbar-container:before,
+.navbar-container:after,
+.navbar-button:before,
+.navbar-button:after,
+.navbar-category:before,
+.navbar-category:after {
+  display: table;
+  content: "";
+}
+.navbar:after,
+.navbar-container:after,
+.navbar-button:after,
+.navbar-category:after {
+  clear: both;
+}
+
+
+/* Navbar
+-------------------------------------------- */
+/* Base classes */
+/*.navbar {
+  position: relative;
+  min-height: 60px;
+}*/
+
+.navbar-category {
+  height: 60px;
+}
+@media (min-width: 100px) {
+  .navbar-category {
+    float: left;
+    width: 25%;
+  }
+}
+
 
 /* Clearfix
 ------------------------------------------- */
@@ -331,6 +446,7 @@
 
 }
 
+<<<<<<< HEAD:FRONTEND/style2.css
 
 /*POSISI TAGS*/
 .cstm{
@@ -416,3 +532,12 @@
     content: 'Lebih sedikit';
 }
 
+=======
+p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    font-weight: 300;
+    color: black;
+    margin:10px 0;
+}
+>>>>>>> f2477845a845cf8e3add3e925f05a57e2471a97c:FRONTEND/magnify.css

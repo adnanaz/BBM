@@ -446,10 +446,105 @@ BATASSS!*/
 
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:FRONTEND/style2.css
+
+/*POSISI TAGS*/
+.cstm{
+  margin-left: 390px;
+}
+
+/*.pad15 {
+  background-color: #ffff;
+  border: solid 2px;
+  }*/
+
+/*CAROUSEL PROPS*/
+.MultiCarousel { float: left; overflow: hidden; padding:10px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:1px; /*background:#f1f1f1;*/ color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+        .my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
+
+.load {
+  margin: auto;
+  text-align: center;
+}
+
+.mitra {
+  width: 220px;
+  height: 110px;
+  margin: 0 0 5px 0;
+
+}
+.daftar button {
+  padding: 10px;
+}
+
+.more {
+  margin-top: 10px;
+  margin-left: 2px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+
+/* collapse text */
+#summary {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#summary p.collapse:not(.show) {
+    height: 25px !important;
+    overflow: hidden;
+  
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+}
+
+#summary p.collapsing {
+    min-height: 20px !important;
+}
+
+#summary a.collapsed:after  {
+    content: 'Baca selengkapnya';
+}
+
+#summary a:not(.collapsed):after {
+    content: 'Lebih sedikit';
+}
+
+=======
+>>>>>>> f2477845a845cf8e3add3e925f05a57e2471a97c
 p {
     font-size: 1.2em;
     line-height: 1.8em;
     font-weight: 300;
     color: black;
     margin:10px 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f2477845a845cf8e3add3e925f05a57e2471a97c:FRONTEND/magnify.css
+>>>>>>> f2477845a845cf8e3add3e925f05a57e2471a97c
