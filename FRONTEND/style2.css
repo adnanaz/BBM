@@ -387,10 +387,7 @@
     margin: 10px 0;
     border-bottom: 1px dashed #ddd;
 }
-/*.sosmed img {
-height: 40px;
-width: 40px;
-}*/
+
 
 /* collapse text */
 #summary {
@@ -418,3 +415,4 @@ width: 40px;
 #summary a:not(.collapsed):after {
     content: 'Lebih sedikit';
 }
+
