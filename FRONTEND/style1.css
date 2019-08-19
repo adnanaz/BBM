@@ -55,6 +55,11 @@ border-radius: 1px;
   border-left-color: inherit;
 }
 
+/*.flashsale row {
+ border:solid 1px; 
+ height: 400px; 
+ background-color:#F80A35;
+}*/
 /*.card-custom-avatar img {
   border-radius: 50%;
   box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
@@ -129,9 +134,9 @@ figure.book {
   font-weight: 400;
 }
 
-.navbar {
+/*.navbar {
   height: 65px;
-}
+}*/
 .cover {
   display: inline-block;
   position: relative;
@@ -151,9 +156,6 @@ figure.book {
 }
 
 
-
-
-
 .cover img {
   height: 200px;
   display: block;
@@ -167,10 +169,6 @@ figure.book {
 
 }
 
-/*.advt {
-  border: solid;
-  border-width: 1px;
-}*/
 
 /*countdown*/
 @import "compass/css3";
@@ -181,7 +179,7 @@ figure.book {
   font-size: 14px;
   border:solid 1px;
   text-align:center;
-  width:240px;
+  width:250px;
   padding:5px;
   border-radius:10px;
   background-color: #FFC800;
@@ -221,4 +219,9 @@ figure.book {
     
   }
   
+}
+.flashsale {
+ border:solid 1px; 
+ height: 400px; 
+ background-color:#F80A35;
 }

@@ -89,5 +89,5 @@
 
 // Initialize plugin
 $('.js-countdown').countdown( 
-  new Date(Date.UTC(2019, 7, 9, 8, 20, 0)) 
+  new Date(Date.UTC(2019, 8, 9, 8, 20, 0)) 
 );
