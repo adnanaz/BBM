@@ -1,3 +1,11 @@
+.image {
+    background: url(assets/1.png) center no-repeat;
+    background-size: contain!important;
+    height: 450px!important;
+    padding-top: 5px!important;
+    margin-top: 16px!important;
+}
+
 .header {
     display: block;
     padding: 32px 0 9px;

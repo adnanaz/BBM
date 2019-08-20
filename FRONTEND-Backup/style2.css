@@ -114,46 +114,6 @@ BATASSS!*/
   }
 }
 
-
-/* Clearfix
-------------------------------------------- */
-.navbar:before,
-.navbar:after,
-.navbar-container:before,
-.navbar-container:after,
-.navbar-button:before,
-.navbar-button:after,
-.navbar-category:before,
-.navbar-category:after {
-  display: table;
-  content: "";
-}
-.navbar:after,
-.navbar-container:after,
-.navbar-button:after,
-.navbar-category:after {
-  clear: both;
-}
-
-
-/* Navbar
--------------------------------------------- */
-/* Base classes */
-/*.navbar {
-  position: relative;
-  min-height: 60px;
-}*/
-
-.navbar-category {
-  height: 60px;
-}
-@media (min-width: 100px) {
-  .navbar-category {
-    float: left;
-    width: 25%;
-  }
-}
-
 /* Navbar category
 -------------------- */
 .navbar-category {
