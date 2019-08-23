@@ -6,6 +6,7 @@
       cartTotal = 0,
       productCounter = 1,
       timer = '',
+      addDetail = $('.add-detail'),
       addCart = $('.add-cart'),
       deleteCart = $('.cart-product-delete');
   
@@ -100,10 +101,52 @@
     fns.showCart(cart);
   }
 
+  fns.addToDetail = function(){
+    var pattern = "<article class='cart-product' data-cart-product-id='" + productData.id + "' data-cart-product-counter='" + productCounter + "'>\n<div class='cart-product-img'><img src=" + productData.img + " alt=''></div>\n<div class='cart-product-info'>\n<span class='product-brand'>" + productData.brand + "</span>\n<span class='product-decription'>" + productData.decription + "</span><span class='product-volume'>" + productData.volume + "</span>\n</div>\n<div class='cart-product-footer'>\n<span class='product-price'></i><b>" + productData.price  + "</b>-</span><a href='#' class='cart-product-delete'><i class='fa fa-trash-o fa-fw'></i></a>\n</div>\n</article>",
+        cart = $('#cart'),
+        cartProducts = cart.find('.cart-product'),
+        cartItem;
+ 
+     if(cartProducts.length > 0) {
+       for(var i = 0; i < cartProducts.length; i++) {
+         //console.log("i: " + i);
+         if(cartProducts.eq(i).data('cart-product-id') != productData.id) {
+           //console.log("data: " + cartProducts.eq(i).data('cart-product-id') + " id: " + productData.id);
+           if(i == cartProducts.length - 1) {
+             $(pattern).insertBefore(cart.find('.cart-total'));
+             cartProducts = cart.find('.cart-product');
+             break;
+           }
+         } else {
+             cartItem = i;
+             var cartProductPrice = cartProducts.eq(cartItem).find('.cart-product-footer .product-price b'),
+                 price = cartProductPrice.text();
+             price = parseInt(price);
+             price += productData.price;
+             cartProductPrice.text(price);
+             break;
+         }
+       }
+     } else {
+       $(pattern).insertBefore(cart.find('.cart-total'));
+       cartProducts = cart.find('.cart-product');
+     }
+     
+     cartCounter++;
+     cartTotal += productData.price;
+     fns.changeCart();
+     fns.showCart(cart);
+   }
+
   addCart.on('click', function(){
     var _THIS = $(this);
     fns.getProductData(_THIS);
     fns.addToCard();
+  });
+  addDetail.on('click', function(){
+    var _THIS = $(this);
+    fns.getProductData(_THIS);
+    fns.addToDetail();
   });
   
   /*deleteCart.on('click', function(e){
