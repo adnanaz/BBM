@@ -1,3 +1,58 @@
+<?php
+
+$con = mysqli_connect("localhost","root","","bibit_murah");
+
+$msg = '';
+
+if(isset($_POST["login"]))
+{
+// Deklarasi variable
+$usere = $_POST['user_email'];
+$userp = $_POST['user_password'];
+$usernt = $_POST['user_email'];
+$cekactivation = mysqli_query($con,"SELECT * FROM register_user WHERE user_email = '$usere'");
+$ceknotelp = mysqli_query($con,"SELECT * FROM register_user WHERE user_no_telp = '$usernt'");
+$cekpassword = mysqli_query($con,"SELECT * FROM register_user WHERE user_password = '$userp'");
+	if(mysqli_num_rows($cekactivation) <> 0){
+		
+    	foreach($cekactivation as $row)
+		{
+			if($row['user_email_status'] == 'verified')
+			{
+				if(mysqli_num_rows($cekpassword) <> 0)
+				{
+					$_SESSION['user_id'] = $row['register_user_id'];
+					header("location:index.php");
+				}else{
+					$msg = "<label>Wrong Password</label>";
+				}
+			}else{
+				$msg = "<label class='text-danger'>Please First Verify, your email address</label>";
+			}
+		}
+	}if(mysqli_num_rows($ceknotelp) <> 0){
+		
+    	foreach($ceknotelp as $rowl)
+		{
+			if($rowl['user_email_status'] == 'verified')
+			{
+				if(mysqli_num_rows($cekpassword) <> 0)
+				{
+					$_SESSION['user_id'] = $row['register_user_id'];
+					header("location:index.php");
+				}else{
+					$msg = "<label>Wrong Password</label>";
+				}
+			}else{
+				$msg = "<label class='text-danger'>Please First Verify, your email address</label>";
+			}
+		}
+	}else{
+		$msg = "<label class='text-danger'>Wrong Email Address Or Username</label>";
+	}
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,20 +78,21 @@
   
    <div class="container">
       <h1>Masuk</h1>
-      <form method="GET" action="signup\signup.php">
+      <form method="post">
+      <?php echo $msg; ?>
         <div class="title">
-          <input type="text" required="required" name="first" id="first">
+          <input type="text" required="required" name="user_email" id="first">
           <label for="first">Alamat email atau username</label>
           <div class="line"></div>
         </div>
         <div class="title">
-          <input type="password" required="required" name="password" id="password">
+          <input type="password" required="required" name="user_password" id="password">
          
           <label for="password">Password</label>
           <div class="line"></div>
         </div>
         <div class="right">
-          <input type="submit" class="btn btn-outline-success" value="Login">
+          <input type="submit" class="btn btn-outline-success" name="login" value="Login">
 
         </div>
               </form>
